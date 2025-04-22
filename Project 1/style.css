@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    /* Warna utama Kakao */
+    --color-primary: #FEE500; /* Kuning khas Kakao */
+  
+    /* Warna teks dan elemen gelap */
+    --color-black: #191919;
+    --color-dark-gray: #4d4d4d;
+  
+    /* Warna putih dan netral */
+    --color-white: #ffffff;
+    --color-light-gray: #422626;
+  
+    /* Tambahan opsional */
+    --color-accent: #ffe600; /* Sedikit lebih terang dari primary */
+    --color-shadow: rgba(0, 0, 0, 0.1);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  html, body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-light-gray);
+  }
+/* BAGIAN NAVBAR */
+  nav {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-dark-gray);
+    position: relative;
+    height: 70px;
+  }
+.logo {
+    color: var(--color-accent)
+}
+  nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  nav ul li{
+    list-style-type: none;
+  }
+
+  nav ul li a{
+    text-decoration: none;
+    color: var(--color-white);
+  }
+nav ul li a:hover{
+    color: #FEE500;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .menu-icon i{
+    color: var(--color-white);
+    font-size: 30px;
+  }
+/* toggle button */
+  @media (max-width:600px) {
+    nav ul{
+        position: absolute;
+        top: 3rem;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: var(--color-dark-gray);
+        gap: 0;
+    }
+    nav ul li{
+        padding: 20px;
+    }
+    .menu-icon {
+        display: block;
+    }
+    #menuList {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+      }
+      /* END TOGGLE BUTTON */
+    }
+/* END NAVBAR */
+.hero-all {
+    background-image: linear-gradient(rgba(194, 126, 126, 0.884), rgba(0, 0, 0, 0.644)), url(./img/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    color: var(--color-white);
+    height: 70vh;
+  }
+
+  .hero {
+    align-items: center;
+  }
+  
+.judul-body{
+    text-align: center;
+    margin: 0px 0 0px 0;
+    padding: 55px 0 10px 0;
+}
+
+.judul-body h1{
+    font-size: 2rem;
+}
+.judul-body p{
+    font-size: 15px;
+}
+.img-hero{
+    max-width: 400px;
+    float: left;
+}
+.img {
+    max-width: 400px;
+    border-radius: 60px;
+    display: block;
+    margin: 5px 0 0px 70px;
+}
+
+.text-hero {
+    max-width: 900px;
+    margin: 60px 50px 0px 550px;
+    font-size: 20px;
+}
+
+.text-hero h2 {
+    padding-top: 100px;
+}
+
+.btn {
+    display: block;
+    margin: 40px 0 0 0;
+    font-size: 20px;
+    background-color: green;
+    color: var(--color-white);
+    border-radius: 100px;
+    font-family: 'Poppins', sans-serif;
+    padding: 4px 16px 4px 16px;
+}
+.btn:hover {
+  background-color: #ffe600;
+  color: #191919;
+  transition: .5s;
+}
+
+/* Survey */
+
+.survey {
+  max-width: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-black);
+  margin: 10px 0 5px 490px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
+
+}
+
+.survey div{
+  margin: 0px 50px 0 30px;
+}
+.survey div h3{
+  text-align: center;
+  font-size: 30px;
+  color:red
+}
+
+.survey div p{
+  display: block;
+  text-align: center;
+  padding: 0px;
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--color-black);
+}
+
+.factory {
+  display: block;
+  color:var(--color-white);
+  margin: 90px 0 90px 0 ;
+  
+}
+
+.factory h1{
+  text-align: center;
+  font-size: 40px;
+  font-family: "PBebas Neue", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.factory p{
+  text-align: center;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 20px 0 0 0;
+}
+
+.mf-1 {
+  display: flex;
+  align-items: flex-start; /* supaya gambar dan teks rata atas */
+  justify-content: flex-start;
+  max-width: 60%;
+  padding: 20px;
+  gap: 20px; /* jarak antara gambar dan teks */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
+  border-radius: 30px;
+  margin: 20px 0 0 50px;
+}
+
+.mf-1:hover {
+  box-shadow: 0 8px 16px rgba(63, 3, 3, 0.842);
+  transition: box-shadow 0.3s ease;
+  background-color: green;
+  color: rgb(255, 255, 255);
+  transition: .5s;
+}
+
+.mf-1 img {
+  max-width: 250px; /* ukuran gambar bisa disesuaikan */
+  border-radius: 20px;
+  height: auto;
+}
+
+.mf-2 {
+  display: flex;
+  align-items: flex-start; /* supaya gambar dan teks rata atas */
+  justify-content: flex-end;
+  max-width: 60%;
+  padding: 20px;
+  gap: 20px; /* jarak antara gambar dan teks */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
+  border-radius: 30px;
+  margin: 40px 0 0 700px;
+}
+
+.mf-2:hover {
+  box-shadow: 0 8px 16px rgba(63, 3, 3, 0.842);
+  transition: box-shadow 0.3s ease;
+  background-color: green;
+  color: rgb(255, 255, 255);
+  transition: .5s;
+}
+
+.mf-2 img {
+  max-width: 250px; /* ukuran gambar bisa disesuaikan */
+  border-radius: 20px;
+  height: auto;
+}
+
+.teks {
+font-family: "Bebas Neue", sans-serif;
+text-align: center;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 1024px) {
+  .text-hero {
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .img {
+    margin: 20px auto;
+    float: none;
+  }
+
+  .img-hero {
+    max-width: 100%;
+    float: none;
+  }
+
+  .survey {
+    flex-direction: column;
+    margin: 10px auto;
+    padding: 20px;
+  }
+
+  .survey div {
+    margin: 20px 0;
+  }
+
+  .mf-1, .mf-2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .mf-2 {
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .judul-body h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-hero {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+
+  nav {
+    padding: 10px 20px;
+  }
+
+  nav ul li {
+    padding: 15px;
+  }
+
+  .survey div h3 {
+    font-size: 24px;
+  }
+
+  .survey div p {
+    font-size: 16px;
+  }
+
+  .factory h1 {
+    font-size: 28px;
+  }
+
+  .factory p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .judul-body p {
+    font-size: 13px;
+  }
+
+  .survey {
+    padding: 10px;
+  }
+
+  .text-hero h2 {
+    font-size: 18px;
+    padding-top: 50px;
+  }
+
+  .btn {
+    margin: 20px auto;
+  }
+
+  .mf-1 img, .mf-2 img {
+    max-width: 100%;
+  }
+
+  .mf-1, .mf-2 {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .factory h1 {
+    font-size: 24px;
+  }
+}
+
+
+#testimoni {
+  padding: 2rem;
+  background-color: #fefefe;
+  font-family: sans-serif;
+}
+
+.testimoni-header h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color: #191919;
+}
+
+.testimoni-list {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimoni-item {
+  background-color: #f7f6f1;
+  border: 1px solid #201d03;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 300px;
+  transition: transform 0.2s ease;
+}
+
+.testimoni-item:hover {
+  transform: translateY(-5px);
+}
+
+.testimoni-img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  background-color: #ffe600; /* Placeholder kalau belum ada gambar */
+}
+
+.testimoni-item h4 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  color: #4d4d4d;
+}
+
+.testimoni-item p {
+  font-size: 0.95rem;
+  color: #191919;
+  line-height: 1.4;
+}
+
+#promo-akhir {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-white);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px var(--color-shadow);
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+  gap: 1rem;
+}
+
+#promo-akhir p {
+  font-size: 1.1rem;
+  color: var(--color-black);
+}
+
+#promo-akhir button {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#promo-akhir button:hover {
+  background-color: var(--color-accent);
+}
+
+#footer {
+  background-color: #422626;
+  color: #ffffff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+#footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#footer p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+#footer ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+#footer ul li a:hover {
+  color: #ffe600;
+}
