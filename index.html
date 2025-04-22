@@ -128,16 +128,33 @@ nav ul li a:hover{
 .judul-body p{
     font-size: 15px;
 }
-.img-hero{
-    max-width: 400px;
-    float: left;
+/* Gaya umum untuk gambar */
+.img-hero {
+    width: 100%; /* Gambar mengikuti lebar container */
+    overflow: hidden; /* Menyembunyikan bagian gambar yang keluar dari batas */
 }
-.img {
-    max-width: 400px;
-    border-radius: 60px;
-    display: block;
-    margin: 5px 0 0px 70px;
+
+.img-hero .img {
+    width: 100%; /* Membuat gambar responsif */
+    height: auto; /* Menjaga rasio aspek gambar */
+    display: block; /* Menghilangkan ruang kosong di bawah gambar */
 }
+
+/* Media Queries untuk perangkat yang lebih kecil */
+@media (max-width: 768px) {
+    .img-hero .img {
+        width: 100%; /* Menyesuaikan gambar agar tidak lebih besar dari container */
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .img-hero .img {
+        width: 100%; /* Gambar mengisi seluruh lebar layar pada ponsel */
+        height: auto;
+    }
+}
+
 
 .text-hero {
     max-width: 900px;
