@@ -6,6 +6,7 @@
     <title>Web Landing Page Kakao</title>
     <link rel="stylesheet"
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="style.css">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -80,6 +81,16 @@ nav ul li a:hover{
   }
 /* toggle button */
   @media (max-width:600px) {
+    .img {
+      max-width: 100%;
+      border-radius: 30px;
+      margin: 5px auto;
+  }
+
+  .img-hero {
+      float: left;
+      margin: 0 auto;
+  }
     nav ul{
         position: absolute;
         top: 3rem;
@@ -127,15 +138,20 @@ nav ul li a:hover{
 .judul-body p{
     font-size: 15px;
 }
-.img-hero{
-    max-width: 400px;
-    float: left;
+.img-hero {
+  max-width: 100%;
+  float: left;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
+
 .img {
-    max-width: 350px;
-    border-radius: 60px;
-    display: block;
-    margin: 5px 0 0px 50px;
+  max-width: 90%;
+  height: auto;
+  border-radius: 60px;
+  display: block;
+  margin: 5px auto;
 }
 
 .text-hero {
@@ -363,10 +379,17 @@ text-align: center;
 
 @media screen and (max-width: 480px) {
 
-  .img-hero{
-    width: 20%;
-    height: 100%;
-  }
+    .img {
+        max-width: 100%;
+        border-radius: 30px;
+        margin: 5px auto;
+    }
+
+    .img-hero {
+        float: none;
+        margin: 0 auto;
+    }
+
   .judul-body p {
     font-size: 13px;
   }
