@@ -7,8 +7,7 @@
     <link rel="stylesheet"
   href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link rel="stylesheet" href="style.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
@@ -106,7 +105,7 @@ nav ul li a:hover{
     }
 /* END NAVBAR */
 .hero-all {
-    background-image: linear-gradient(rgba(194, 126, 126, 0.884), rgba(0, 0, 0, 0.644)), url('https://i.pinimg.com/736x/bb/2e/77/bb2e7767cf38e2ddd613ae3a5918ba6a.jpg');
+    background-image: linear-gradient(rgba(194, 126, 126, 0.884), rgba(0, 0, 0, 0.644)), url(./img/wallpaperflare.com_wallpaper.jpg);
     background-size: cover;
     color: var(--color-white);
     height: 70vh;
@@ -129,8 +128,9 @@ nav ul li a:hover{
     font-size: 15px;
 }
 .img-hero{
-    max-width: 350px;
+    max-width: 10px;
     float: left;
+    border-style: solid;
 }
 .img {
     max-width: 400px;
@@ -280,7 +280,7 @@ text-align: center;
 
 /* RESPONSIVE DESIGN */
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .text-hero {
     margin: 40px auto;
     padding: 0 20px;
@@ -293,7 +293,7 @@ text-align: center;
   }
 
   .img-hero {
-    max-width: 60%;
+    max-width: 100%;
     float: none;
   }
 
@@ -321,11 +321,7 @@ text-align: center;
   }
 }
 
-@media (max-width: 768px) {
-  .img-hero {
-    max-width: 60%;
-    float: none;
-  }
+@media screen and (max-width: 768px) {
   .judul-body h1 {
     font-size: 1.5rem;
   }
@@ -366,11 +362,7 @@ text-align: center;
   }
 }
 
-@media (max-width: 480px) {
-  .img-hero {
-    max-width: 60%;
-    float: none;
-  }
+@media screen and (max-width: 480px) {
   .judul-body p {
     font-size: 13px;
   }
@@ -492,61 +484,44 @@ text-align: center;
   background-color: var(--color-accent);
 }
 
-.footer {
-    background-color: #422626;
-    color: #fff;
-    padding: 30px 0;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
+#footer {
+  background-color: #422626;
+  color: #ffffff;
+  padding: 2rem 0;
+  text-align: center;
 }
 
-.footer-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding-bottom: 20px;
+#footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.footer-content h3 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    color: #FEE500;
+#footer p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
-.footer-content p {
-    font-size: 16px;
-    margin: 10px 0;
-    line-height: 1.5;
+#footer ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.footer-info p {
-    font-size: 18px;
-    margin: 5px 0;
+#footer ul li {
+  display: inline;
+  margin: 0 10px;
 }
 
-.footer-info a {
-    color: #FEE500;
-    text-decoration: none;
-    font-weight: bold;
+#footer ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
-.footer-info a:hover {
-    text-decoration: underline;
+#footer ul li a:hover {
+  color: #ffe600;
 }
-
-.footer-bottom {
-    border-top: 2px solid #FEE500;
-    padding-top: 10px;
-    font-size: 14px;
-}
-
-.footer-bottom p {
-    color: #FEE500;
-    margin: 0;
-}
-
-
-  </style>
+ </style>
 </head>
 <body>
     <header>
