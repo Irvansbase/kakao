@@ -128,8 +128,12 @@ nav ul li a:hover{
     font-size: 15px;
 }
 .img-hero{
-    max-width: 10px;
-    float: left;
+  width: 100%; /* Gunakan persentase untuk fleksibilitas */
+  max-width: 400px; /* Tetap batasi maksimum */
+  height: auto; /* Pertahankan rasio aspek */
+  display: block; /* Hilangkan float */
+  margin: 20px auto; /* Pusatkan gambar dan beri margin yang responsif */
+  border-radius: 60px;
 }
 .img {
     max-width: 400px;
@@ -292,8 +296,7 @@ text-align: center;
   }
 
   .img-hero {
-    max-width: 50%;
-    float: none;
+    max-width: 250px;
   }
 
   .survey {
@@ -321,6 +324,12 @@ text-align: center;
 }
 
 @media screen and (max-width: 768px) {
+
+  .img-hero {
+    max-width: 300px; /* Lebih kecil untuk mobile */
+    margin: 10px auto; /* Margin lebih kecil */
+  }
+    
   .judul-body h1 {
     font-size: 1.5rem;
   }
