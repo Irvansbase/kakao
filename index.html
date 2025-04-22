@@ -79,30 +79,6 @@ nav ul li a:hover{
     color: var(--color-white);
     font-size: 30px;
   }
-
-.img-hero {
-  width: 100%;
-  height: auto;
-  max-height: 90vh;
-  object-fit: cover;
-  display: block;
-  border-radius: 0.5rem; /* opsional, buat sudut agak membulat */
-}
-
-/* Tablet & ke bawah */
-@media (max-width: 768px) {
-  .img-hero {
-    max-height: 70vh;
-  }
-}
-
-/* Smartphone */
-@media (max-width: 480px) {
-  .img-hero {
-    max-height: 60vh;
-  }
-}
-
 /* toggle button */
   @media (max-width:600px) {
     nav ul{
@@ -152,7 +128,10 @@ nav ul li a:hover{
 .judul-body p{
     font-size: 15px;
 }
-
+.img-hero{
+    max-width: 400px;
+    float: left;
+}
 .img {
     max-width: 400px;
     border-radius: 60px;
@@ -313,7 +292,10 @@ text-align: center;
     float: none;
   }
 
-
+  .img-hero {
+    max-width: 100%;
+    float: none;
+  }
 
   .survey {
     flex-direction: column;
@@ -340,7 +322,6 @@ text-align: center;
 }
 
 @media screen and (max-width: 768px) {
-
   .judul-body h1 {
     font-size: 1.5rem;
   }
